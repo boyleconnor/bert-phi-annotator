@@ -1,0 +1,8 @@
+.empty/
+.vscode/
+node_modules/
+
+.env
+dist.yaml
+openapi.yaml
+server/dslim-bert
