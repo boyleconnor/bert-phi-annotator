@@ -2,10 +2,10 @@
 
 # Hugging Face-based NLP Sandbox PHI Annotators
 
-[![GitHub Release](https://img.shields.io/github/release/nlpsandbox/phi-annotator-huggingface.svg?include_prereleases&color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/nlpsandbox/phi-annotator-huggingface/releases)
-[![GitHub CI](https://img.shields.io/github/workflow/status/nlpsandbox/phi-annotator-huggingface/CI.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/nlpsandbox/phi-annotator-huggingface/actions)
-[![GitHub License](https://img.shields.io/github/license/nlpsandbox/phi-annotator-huggingface.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/nlpsandbox/phi-annotator-huggingface/blob/main/LICENSE)
-[![Docker](https://img.shields.io/badge/docker-blue.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=nlpsandbox&logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMy4yIDcuOS0xLjctMXYxMS40bDkuOSA1LjdWMTIuNkw1LjYgOS4zIDMuMiA3Ljl6bTE3LjEtMS4zIDEuNS0uOUwxMiAwIDIuMiA1LjdsMi42IDEuNS4xLjEgMS43IDEgNS41IDMuMiA1LjEtMyAzLjEtMS45ek0xMiA5LjUgOS4zIDcuOSA3LjQgNi44bC0xLjctMS0uMS0uMWgtLjFMMTIgMS45bDYuNSAzLjhMMTYuMyA3IDEyIDkuNXptOC44LTEuNi0yLjQgMS40LS41LjItNS4zIDMuMVYyNGw5LjktNS43VjYuOWwtMS43IDF6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)](https://www.synapse.org/#!Synapse:syn22277123/docker/ "Get the Docker image of this tool on NLPSandbox.io")
+[![GitHub Release](https://img.shields.io/github/release/nlpsandbox/phi-annotator-huggingface.svg?include_prereleases&color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/cascadianblue/bert-phi-annotator/releases)
+[![GitHub CI](https://img.shields.io/github/workflow/status/nlpsandbox/phi-annotator-huggingface/CI.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/cascadianblue/bert-phi-annotator/actions)
+[![GitHub License](https://img.shields.io/github/license/nlpsandbox/phi-annotator-huggingface.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/cascadianblue/bert-phi-annotator/blob/main/LICENSE)
+[![Docker](https://img.shields.io/badge/docker-blue.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=nlpsandbox&logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMy4yIDcuOS0xLjctMXYxMS40bDkuOSA1LjdWMTIuNkw1LjYgOS4zIDMuMiA3Ljl6bTE3LjEtMS4zIDEuNS0uOUwxMiAwIDIuMiA1LjdsMi42IDEuNS4xLjEgMS43IDEgNS41IDMuMiA1LjEtMyAzLjEtMS45ek0xMiA5LjUgOS4zIDcuOSA3LjQgNi44bC0xLjctMS0uMS0uMWgtLjFMMTIgMS45bDYuNSAzLjhMMTYuMyA3IDEyIDkuNXptOC44LTEuNi0yLjQgMS40LS41LjItNS4zIDMuMVYyNGw5LjktNS43VjYuOWwtMS43IDF6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)](https://www.synapse.org/#!Synapse:syn26486812/docker/ "Get the Docker image of this tool on NLPSandbox.io")
 [![Leaderboard](https://img.shields.io/badge/leaderboard-blue.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=nlpsandbox&logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMy4yIDcuOS0xLjctMXYxMS40bDkuOSA1LjdWMTIuNkw1LjYgOS4zIDMuMiA3Ljl6bTE3LjEtMS4zIDEuNS0uOUwxMiAwIDIuMiA1LjdsMi42IDEuNS4xLjEgMS43IDEgNS41IDMuMiA1LjEtMyAzLjEtMS45ek0xMiA5LjUgOS4zIDcuOSA3LjQgNi44bC0xLjctMS0uMS0uMWgtLjFMMTIgMS45bDYuNSAzLjhMMTYuMyA3IDEyIDkuNXptOC44LTEuNi0yLjQgMS40LS41LjItNS4zIDMuMVYyNGw5LjktNS43VjYuOWwtMS43IDF6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)](https://www.synapse.org/#!Synapse:syn22277123/wiki/608544 "View the performance of this tool on NLPSandbox.io")
 [![Discord](https://img.shields.io/discord/770484164393828373.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://nlpsandbox.io/discord "Realtime support / chat with the community and the team")
 
@@ -16,17 +16,17 @@ processing (NLP) tools on both public and private datasets. Academics, students,
 and industry professionals are invited to browse the available tasks and
 participate by developing and submitting an NLP Sandbox tool.
 
-This repository packages [dslim-bert] as an [NLP Sandbox PHI annotator]. The
-performance of this tool can be viewed and compared to the performance of other
+This repository packages [BERT fine-tuned on I2B2] as an [NLP Sandbox PHI annotator].
+The performance of this tool can be viewed and compared to the performance of other
 PHI annotators on [NLPSandbox.io].
 
-Annotations supported by dslim-bert:
+Annotation types supported by this annotator:
 
 Annotation  | Schema                     | Supported
 ------------|----------------------------|----------
-Contact     | [TextContactAnnotation]    | No
-Date        | [TextDateAnnotation]       | No
-ID          | [TextIdAnnotation]         | No
+Contact     | [TextContactAnnotation]    | Yes
+Date        | [TextDateAnnotation]       | Yes
+ID          | [TextIdAnnotation]         | Yes
 Location    | [TextLocationAnnotation]   | Yes
 Person Name | [TextPersonNameAnnotation] | Yes
 
@@ -50,11 +50,9 @@ Person Name | [TextPersonNameAnnotation] | Yes
 ## Specification
 
 - NLP Sandbox schemas version: 1.2.0
-- Tool version: 1.2.0
+- Tool version: 1.0.0
 - Tool images:
-  - [docker.synapse.org/syn22277123/phi-annotator-huggingface-bert-base-ner]
-  - [docker.synapse.org/syn22277123/phi-annotator-huggingface-bert-base-ner-uncased]
-  - [docker.synapse.org/syn22277123/phi-annotator-huggingface-bert-large-ner]
+  - [docker.synapse.org/syn26486812/bert-i2b2-annotator-bert-ner-i2b2]
 
 ## Requirements
 
@@ -103,12 +101,6 @@ the tool using Docker (production) or Python (development).
 - Using Docker: http://localhost/ui
 - Using Python: http://localhost:8080/ui
 
-## Development
-
-Please refer to the section `Development` of the [NLP Sandbox PHI Annotator
-example] for information on how to develop an NLP Sandbox PHI annotator in
-Python-Flask and other programming languages-frameworks.
-
 ## Versioning
 
 ### GitHub release tags
@@ -141,8 +133,6 @@ and evaluate its performance.
 
 ## Citation
 
-- If you use dslim-bert in your publications, please follow the [citation
-  guidelines given by the authors of dslim-bert].
 - If you use this NLP Sandbox tool or resources from [NLPSandbox.io], please
   follow these [citation guidelines].
 
@@ -165,17 +155,13 @@ Thinking about contributing to this project? Get started by reading our
 [Docker Engine]: https://docs.docker.com/engine/install/
 [CI/CD workflow]: .github/workflows/ci.yml
 [semantic versioning]: https://semver.org/
-[dslim-bert]: https://huggingface.co/dslim/bert-base-NER
+[BERT fine-tuned on I2B2]: https://huggingface.co/connorboyle/bert-ner-i2b2
 [NLP Sandbox PHI annotator]: https://www.synapse.org/#!Synapse:syn22277123/wiki/609134
-[docker.synapse.org/syn22277123/phi-annotator-neuroner]: https://www.synapse.org/#!Synapse:syn26056768
+[docker.synapse.org/syn26486812/bert-i2b2-annotator-bert-ner-i2b2]: https://www.synapse.org/#!Synapse:syn26486827
 [NLP Sandbox PHI Annotator example]: https://github.com/nlpsandbox/phi-annotator-example
 [citation guidelines given by the authors of NeuroNER]: https://github.com/Franck-Dernoncourt/NeuroNER#citation
-[citation guidelines given by the authors of dslim-bert]: https://huggingface.co/dslim/bert-base-NER#bibtex-entry-and-citation-info
 [TextContactAnnotation]: https://github.com/nlpsandbox/nlpsandbox-schemas/blob/main/openapi/commons/components/schemas/TextContactAnnotation.yaml
 [TextDateAnnotation]: https://github.com/nlpsandbox/nlpsandbox-schemas/blob/main/openapi/commons/components/schemas/TextDateAnnotation.yaml
 [TextIdAnnotation]: https://github.com/nlpsandbox/nlpsandbox-schemas/blob/main/openapi/commons/components/schemas/TextIdAnnotation.yaml
 [TextLocationAnnotation]: https://github.com/nlpsandbox/nlpsandbox-schemas/blob/main/openapi/commons/components/schemas/TextLocationAnnotation.yaml
 [TextPersonNameAnnotation]: https://github.com/nlpsandbox/nlpsandbox-schemas/blob/main/openapi/commons/components/schemas/TextPersonNameAnnotation.yaml
-[docker.synapse.org/syn22277123/phi-annotator-huggingface-bert-base-ner]: https://www.synapse.org/#!Synapse:syn26276938
-[docker.synapse.org/syn22277123/phi-annotator-huggingface-bert-base-ner-uncased]: https://www.synapse.org/#!Synapse:syn26276939
-[docker.synapse.org/syn22277123/phi-annotator-huggingface-bert-large-ner]: https://www.synapse.org/#!Synapse:syn26276940
