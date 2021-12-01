@@ -11,9 +11,6 @@ def create_text_location_annotations():  # noqa: E501
 
     Return the location annotations found in a clinical note # noqa: E501
 
-    :param text_location_annotation_request:
-    :type text_location_annotation_request: dict | bytes
-
     :rtype: TextLocationAnnotationResponse
     """
     res = None
@@ -23,7 +20,10 @@ def create_text_location_annotations():  # noqa: E501
             annotation_request = TextLocationAnnotationRequest.from_dict(connexion.request.get_json())  # noqa: E501
             note = annotation_request._note
             annotations = []
-            location_annotations = huggingFace.get_entities(note.text, 'LOC')
+            location_annotations = huggingFace.get_entities(
+                note.text,
+                ['HOSPITAL', 'CITY', 'COUNTRY', 'LOCATION-OTHER', 'STATE',
+                 'STREET', 'ZIP'])
             add_location_annotation(annotations, location_annotations)
             res = TextLocationAnnotationResponse(annotations)
             status = 200
