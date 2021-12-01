@@ -37,7 +37,7 @@ def add_name_annotation(annotations, name_annotations):
         annotations.append(
             TextPersonNameAnnotation(
                            start=int(match['start']),
-                           length=len(match['word']),
+                           length=int(match['end']) - int(match['start']),
                            text=match['word'],
                            confidence=float(match['score']*100)
             ))

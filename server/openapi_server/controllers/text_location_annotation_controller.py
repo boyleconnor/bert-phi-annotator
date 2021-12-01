@@ -39,7 +39,7 @@ def add_location_annotation(annotations, location_annotations):
         annotations.append(
             TextLocationAnnotation(
                            start=int(match['start']),
-                           length=len(match['word']),
+                           length=int(match['end']) - int(match['start']),
                            text=match['word'],
                            location_type='other',
                            confidence=float(match['score']*100)
