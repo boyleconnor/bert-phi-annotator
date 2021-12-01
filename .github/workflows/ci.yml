@@ -11,7 +11,7 @@ on:
   pull_request:
 
 env:
-  docker_repository_base: docker.synapse.org/syn22277123/phi-annotator-huggingface
+  docker_repository_base: docker.synapse.org/syn26486812/bert-i2b2-annotator
 
 jobs:
   configure:
@@ -109,9 +109,7 @@ jobs:
     strategy:
       matrix:
         config-name:
-          - bert-base-ner
-          - bert-base-ner-uncased
-          - bert-large-ner
+          - bert-ner-i2b2
     steps:
     - uses: actions/checkout@v2
 
