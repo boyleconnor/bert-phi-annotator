@@ -148,9 +148,10 @@ class HuggingFace:
         self.nlp = SlidingWindowNERPipeline(model=self.model,
                                             tokenizer=self.tokenizer)
 
-    def get_entities(self, sample_text, label):
+    def get_entities(self, sample_text, labels):
         ner_results = self.nlp(sample_text)
-        ner_results = [r for r in ner_results if label in r['entity_group']]
+        ner_results = [r for r in ner_results if
+                       any(label in r['entity_group'] for label in labels)]
         return ner_results
 
     def get_name(self):
