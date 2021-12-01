@@ -6,8 +6,8 @@ services:
     build:
       context: server
       args:
-        MODEL_NAME: "dslim/bert-base-NER-uncased"
-        CONFIG_NAME: "bert-base-ner-uncased"
+        MODEL_NAME: "connorboyle/bert-ner-i2b2"
+        CONFIG_NAME: "bert-ner-i2b2"
     container_name: phi-annotator
     networks:
       - nlpsandbox-internal
