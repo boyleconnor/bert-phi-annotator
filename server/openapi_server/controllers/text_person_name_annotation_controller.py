@@ -20,7 +20,8 @@ def create_text_person_name_annotations():  # noqa: E501
             annotation_request = TextPersonNameAnnotationRequest.from_dict(connexion.request.get_json())  # noqa: E501
             note = annotation_request._note  # noqa: E501
             annotations = []
-            name_annotations = huggingFace.get_entities(note.text, "PER")
+            name_annotations = huggingFace.get_entities(
+                note.text, ["DOCTOR", "PATIENT"])
             add_name_annotation(annotations, name_annotations)
             res = TextPersonNameAnnotationResponse(annotations)
             status = 200
