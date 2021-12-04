@@ -50,7 +50,7 @@ Person Name | [TextPersonNameAnnotation] | Yes
 ## Specification
 
 - NLP Sandbox schemas version: 1.2.0
-- Tool version: 1.0.0
+- Tool version: 1.0.1
 - Tool images:
   - [docker.synapse.org/syn26486812/bert-i2b2-annotator-bert-ner-i2b2]
 
