@@ -15,7 +15,7 @@ def get_tool():  # noqa: E501
     """
     tool = Tool(
         name=f"phi-annotator-{config.config_name}",
-        version="1.0.0",
+        version="1.0.1",
         license=License.APACHE_2_0,
         repository="github:cascadianblue/bert-phi-annotator",
         description=f"BERT-based PHI annotator ({config.model_name})",
