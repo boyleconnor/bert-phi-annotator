@@ -149,6 +149,8 @@ class HuggingFace:
                                             tokenizer=self.tokenizer)
 
     def get_entities(self, sample_text, labels):
+        if sample_text == '':
+            return []
         ner_results = self.nlp(sample_text)
         ner_results = [r for r in ner_results if
                        any(label in r['entity_group'] for label in labels)]
