@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   phi-annotator:
-    image: docker.synapse.org/syn26486812/bert-i2b2-annotator:1.0.0
+    image: docker.synapse.org/syn26486812/bert-i2b2-annotator:1.0.1
     build:
       context: server
       args:
